@@ -6,12 +6,17 @@
 <body>
 <div id="main">
 <p>{{ oys }}</p>
+    <p v-if="askr=='nsnm'">{{ askr }}</p>
+    <p>{{ sgk }}</p>
+
 </div>
 <script>
 var vm = new Vue({
    el : '#main',
    data : {
-       oys : "hogehoge"
+       oys : "hogehoge",
+       askr : "nsnm",
+       sgk : "tnk"
    }
 });
 </script>
